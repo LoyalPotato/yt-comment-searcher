@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Comment Searcher",
+  "description": "Find comments on the current video based on search terms.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "./src/popup/index.html",
+    "default_icon": "./src/images/favicon_32x32.png",
+    "default_title": "Youtube Comment Searcher"
+  },
+  "background": {
+    "service_worker": "./src/scripts/background.js"
+  },
+  "permissions": ["activeTab", "tabs", "declarativeContent"]
+}
