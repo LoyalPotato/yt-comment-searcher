@@ -1,0 +1,24 @@
+.main-content {
+  padding: var(--main-pad);
+  font-size: 1.5rem;
+  min-width: 15rem;
+}
+
+.main-header__title {
+  font-weight: 500;
+}
+
+:root {
+  --main-pad: 1rem;
+}
+
+body,html{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 10px;
+  font-family: 'Poppins';
+  box-sizing: border-box;
+}
