@@ -1,15 +1,86 @@
 .main-content {
   padding: var(--main-pad);
   font-size: 1.5rem;
-  min-width: 15rem;
+  min-width: 25rem;
+  max-width: 25rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-.main-header__title {
+.comment-row {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1.5rem;
+}
+
+.comment-row .profilePic{
+  border-radius: 50%;
+  height: 48px;
+}
+
+.comment-row .author, 
+.comment-row .comment {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--text-color);
+}
+
+.comment-row .author {
+  font-size: 1.2rem;
+}
+
+.comment-row .comment {
+  font-size: 1rem;
+}
+
+#video-title {
+  margin: 0;
   font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+#error-msg,
+#no-comments {
+  display: none;
+}
+
+#no-comments {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#comments-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+#comment-input {
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--text-color);
+  padding-left: 0.5rem;
+  width: 97%;
+  background-color: transparent;
+  font-size: 1rem;
+  color: var(--text-color);
 }
 
 :root {
   --main-pad: 1rem;
+  --text-color: black;
+  --bg-color: #FBFBF2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: white;
+    --bg-color: #202023;
+  }
 }
 
 body,html{
