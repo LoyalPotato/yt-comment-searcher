@@ -14,12 +14,25 @@
 <body>
   <main class="main-content">
     <header>
-      <span class="main-header__title">
-        Search:
-      </span>
       <p id="video-title"></p>
     </header>
+    <main>
+      <input type="text" id="comment-input" autofocus>
+      <p id="error-msg"></p>
+      <p id="no-comments">No comments found that include: </p>
+      <ul id="comments-list"></ul>
+      <template id="li_template">
+        <li class="comment-row">
+          <img alt="commenter" class="profilePic">
+          <div>
+            <h3 class="author"></h3>
+            <p class="comment"></p>
+          </div>
+        </li>
+      </template>
+    </main>
   </main>
+  <script src="../scripts/popup.js" type="module"></script>
 </body>
 
 </html>
