@@ -13,3 +13,7 @@ Once you have a key go to [popup.js](src/scripts/popup.js) and you'll see a line
 ```
 
 Replace the comment with your key and you should be set :)
+
+### TODO
+
+- Show a different screen when it's not on an youtube video; 
